@@ -61,23 +61,78 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="computer"
-          width="25%"
-          height="25%"
-        />
-        <div class="page-content">xxx</div>
+        <div class="page-content">
+          <h5>enter your employement information:</h5>
+        </div>
+        <br />
+        <div>
+          <h5>Numbers of hours worked:</h5>
+          <!-- Numeric Textfield -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="hours-worked"
+              />
+              <label class="mdl-textfield__label" for="sample2"
+                >hours worked...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h5>hourly rate:</h5>
+          <!-- Numeric Textfield -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="hourly-rate"
+              />
+              <label class="mdl-textfield__label" for="sample2"
+                >hourly rate...</label
+              >
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h5>amount of cats you have:</h5>
+          <!-- Numeric Textfield -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="cats-owned"
+              />
+              <label class="mdl-textfield__label" for="sample2">cats...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+        </div>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          xxx
+          press me!
         </button>
-        <!--basic text-->
-        <p></p>
-        <div id="hello-world"></div>
+        <br />
+        <br />
+        <div id="answers">
+          <div id="pay"></div>
+          <div id="tax"></div>
+          <div id="cat"></div>
+        </div>
+        <br />
+        <br />
+        <img src="./images/cat.jpeg" alt="cat" />
       </main>
     </div>
   </body>
